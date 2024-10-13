@@ -9,9 +9,10 @@ License: MIT
 ## Запуск
 ### Поднимаем контейнер
 ```docker-compose up -d```
-## Админка
+### Создаем администратора
+```docker-compose run --rm django python manage.py createsuperuser```
+## URLS
+### Админка
 ```http://127.0.0.1:8000/admin/```
-- Логин: ```admin```
-- Пароль: ```Qwerty123```
-## API
+### API
 ```http://127.0.0.1:8000/api/docs/```
